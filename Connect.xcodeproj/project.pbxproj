@@ -13,6 +13,8 @@
 		14B1C68C26C3A0390080139E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B1C68B26C3A0390080139E /* Preview Assets.xcassets */; };
 		14B1C69726C3A0390080139E /* ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1C69626C3A0390080139E /* ConnectTests.swift */; };
 		14B1C6A226C3A0390080139E /* ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1C6A126C3A0390080139E /* ConnectUITests.swift */; };
+		14B1C6B026C3A08D0080139E /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1C6AF26C3A08D0080139E /* WelcomePage.swift */; };
+		14B1C6B326C3A2810080139E /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1C6B226C3A2810080139E /* Styler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,12 @@
 		14B1C69D26C3A0390080139E /* ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B1C6A126C3A0390080139E /* ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectUITests.swift; sourceTree = "<group>"; };
 		14B1C6A326C3A0390080139E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B1C6AF26C3A08D0080139E /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		14B1C6B226C3A2810080139E /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
+		14B1C6B626C3A57E0080139E /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		14B1C6B726C3A57E0080139E /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		14B1C6B826C3A57E0080139E /* SFProDisplay-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Ultralight.ttf"; sourceTree = "<group>"; };
+		14B1C6B926C3A57E0080139E /* SFProDisplay-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,11 @@
 		14B1C68326C3A0370080139E /* Connect */ = {
 			isa = PBXGroup;
 			children = (
+				14B1C6B426C3A53E0080139E /* Resources */,
+				14B1C6B126C3A2690080139E /* Utils */,
 				14B1C68426C3A0370080139E /* ConnectApp.swift */,
 				14B1C68626C3A0370080139E /* ContentView.swift */,
+				14B1C6AF26C3A08D0080139E /* WelcomePage.swift */,
 				14B1C68826C3A0390080139E /* Assets.xcassets */,
 				14B1C68D26C3A0390080139E /* Info.plist */,
 				14B1C68A26C3A0390080139E /* Preview Content */,
@@ -128,6 +139,33 @@
 				14B1C6A326C3A0390080139E /* Info.plist */,
 			);
 			path = ConnectUITests;
+			sourceTree = "<group>";
+		};
+		14B1C6B126C3A2690080139E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14B1C6B226C3A2810080139E /* Styler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14B1C6B426C3A53E0080139E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14B1C6B526C3A5460080139E /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14B1C6B526C3A5460080139E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14B1C6B626C3A57E0080139E /* SFProDisplay-Regular.ttf */,
+				14B1C6B726C3A57E0080139E /* SFProDisplay-Semibold.ttf */,
+				14B1C6B926C3A57E0080139E /* SFProDisplay-Thin.ttf */,
+				14B1C6B826C3A57E0080139E /* SFProDisplay-Ultralight.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B1C6B026C3A08D0080139E /* WelcomePage.swift in Sources */,
 				14B1C68726C3A0370080139E /* ContentView.swift in Sources */,
+				14B1C6B326C3A2810080139E /* Styler.swift in Sources */,
 				14B1C68526C3A0370080139E /* ConnectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

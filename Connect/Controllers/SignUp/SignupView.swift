@@ -32,6 +32,7 @@ struct SignupView: View {
         .navigationBarTitle("Signup", displayMode: .inline)
     }
 
+    // MARK: - First name setup
     func firstName(_ geo: GeometryProxy) -> some View {
         Group {
             Spacer()

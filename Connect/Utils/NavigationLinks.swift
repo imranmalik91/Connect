@@ -11,6 +11,7 @@ enum NavigationLinks: Equatable, Identifiable, CustomStringConvertible {
     case login
     case signUp
     case forgotPassword
+    case camera
 
     var description: String {
         switch self {
@@ -20,6 +21,8 @@ enum NavigationLinks: Equatable, Identifiable, CustomStringConvertible {
             return "signup"
         case .forgotPassword:
             return "forgotPassword"
+        case .camera:
+            return "camera"
         }
     }
 

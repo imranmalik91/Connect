@@ -33,7 +33,7 @@ struct TextFieldView: View {
                 .padding([.horizontal], 8)
                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                 .cornerRadius(16)
-                .overlay(RoundedRectangle(cornerRadius: 16).stroke(LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing), lineWidth: 1.0))
+                .overlay(RoundedRectangle(cornerRadius: 16).stroke(LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing), lineWidth: 2.0))
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
         }
@@ -65,7 +65,7 @@ struct SecureFieldView: View {
                 .padding([.horizontal], 8)
                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                 .cornerRadius(16)
-                .overlay(RoundedRectangle(cornerRadius: 16).stroke(LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing), lineWidth: 1.0))
+                .overlay(RoundedRectangle(cornerRadius: 16).stroke(LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing), lineWidth: 2.0))
                 .disableAutocorrection(true)
 
         }

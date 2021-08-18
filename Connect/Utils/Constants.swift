@@ -8,3 +8,4 @@
 import SwiftUI
 
 let gradient = Gradient(colors: [.primary, .blue])
+let ratio16x9 = (9/16)

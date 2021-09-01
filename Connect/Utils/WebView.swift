@@ -27,7 +27,7 @@ struct WebView: UIViewRepresentable {
     }
 
     func updateUIView(_ webview: WKWebView, context: UIViewRepresentableContext<WebView>) {
-        webview.load(request())
+        //webview.load(request())
     }
 
     func makeCoordinator() -> WebCoordinator {

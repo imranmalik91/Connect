@@ -52,10 +52,14 @@ final class WebCoordinator: NSObject, WKUIDelegate, WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let request = navigationAction.request
-        let url = request.url
+        guard let url = request.url else { decisionHandler(.cancel); return }
 
         webView.configuration.websiteDataStore.httpCookieStore.getAllCookies { (cookies) in
-            HTTPCookieStorage.shared.setCookies(cookies, for: url, mainDocumentURL: nil)
+            var newCookies = cookies
+            if let oldCookies = HTTPCookieStorage.shared.cookies(for: url) {
+                newCookies.append(contentsOf: oldCookies)
+            }
+            HTTPCookieStorage.shared.setCookies(newCookies, for: url, mainDocumentURL: nil)
         }
 
         decisionHandler(.allow)
